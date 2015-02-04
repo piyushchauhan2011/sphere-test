@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form action="/sphere/create" method="POST">
+  <label for="name">Name: </label>
+  <input type="text" id="name" name="name" />
+
+  <label for="email">Email: </label>
+  <input type="email" id="email" name="email" />
+
+  <input type="hidden" name="token" value="{{ token }}" />
+  <input type="submit" value="Submit" />
+</form>
+
+{% endblock %}
