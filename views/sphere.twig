@@ -10,7 +10,7 @@
   {% for person in people %}
     <tr>
       <td>{{ person.name }}</td>
-      <td>{{ person.token }}</td>
+      <td><a href="/sphere/{{ person.token }}">{{ person.token }}</a></td>
     </tr>
   {% endfor %}
 </table>
